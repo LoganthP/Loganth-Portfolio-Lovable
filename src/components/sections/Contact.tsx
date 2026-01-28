@@ -95,17 +95,6 @@ const Contact = () => {
           </motion.div>
         </div>
 
-        {/* Large name at bottom */}
-        <motion.div
-          className="mt-24 text-center overflow-hidden"
-          initial={{ opacity: 0, y: 50 }}
-          animate={isVisible ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.5, duration: 0.8 }}
-        >
-          <h1 className="text-8xl md:text-[12rem] lg:text-[16rem] font-bold text-foreground/5 tracking-tighter select-none">
-            LOGANTH
-          </h1>
-        </motion.div>
       </div>
     </footer>
   );
