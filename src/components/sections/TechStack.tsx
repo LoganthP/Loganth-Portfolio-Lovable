@@ -7,6 +7,7 @@ const TechStack = () => {
   const technologies = [
     { name: 'Python', category: 'Language' },
     { name: 'Java', category: 'Language' },
+    { name: 'C', category: 'Language' },
     { name: 'C++', category: 'Language' },
     { name: 'JavaScript', category: 'Language' },
     { name: 'TypeScript', category: 'Language' },
@@ -18,6 +19,7 @@ const TechStack = () => {
     { name: 'Git', category: 'Tools' },
     { name: 'GitHub', category: 'Tools' },
     { name: 'SQL', category: 'Database' },
+    { name: 'MongoDB', category: 'Database' },
     { name: 'Linux', category: 'Systems' },
     { name: 'Postman', category: 'Tools' },
     { name: 'Wireshark', category: 'Security' },
