@@ -1,39 +1,6 @@
 import { motion } from 'framer-motion';
-import { ArrowDown, Linkedin } from 'lucide-react';
-import { useMagneticHover } from '@/hooks/useMagneticHover';
-
-const MagneticButton = ({ children, href, label }: { children: React.ReactNode; href: string; label: string }) => {
-  const { ref, position, handlers } = useMagneticHover<HTMLAnchorElement>(0.4);
-  
-  return (
-    <motion.a
-      ref={ref}
-      href={href}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="relative p-4 rounded-full border border-border/50 text-muted-foreground hover:text-primary hover:border-primary/50 bg-card/20 backdrop-blur-sm transition-colors duration-300 group"
-      style={{
-        x: position.x,
-        y: position.y,
-      }}
-      whileHover={{ scale: 1.15 }}
-      whileTap={{ scale: 0.95 }}
-      aria-label={label}
-      {...handlers}
-    >
-      {/* Glow effect */}
-      <motion.div
-        className="absolute inset-0 rounded-full bg-primary/20 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-      />
-      <span className="relative z-10">{children}</span>
-    </motion.a>
-  );
-};
 
 const Hero = () => {
-  const socialLinks = [
-    { icon: Linkedin, href: 'https://www.linkedin.com/in/loganth-p-158667280/', label: 'LinkedIn' },
-  ];
 
   const name = 'LOGANTH';
 
@@ -149,19 +116,6 @@ const Hero = () => {
           Based in India
         </motion.p>
 
-        {/* Social links with magnetic effect */}
-        <motion.div
-          className="flex justify-center gap-8"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.4, duration: 0.8 }}
-        >
-          {socialLinks.map(({ icon: Icon, href, label }) => (
-            <MagneticButton key={label} href={href} label={label}>
-              <Icon size={24} />
-            </MagneticButton>
-          ))}
-        </motion.div>
       </div>
 
       {/* Scroll indicator */}
