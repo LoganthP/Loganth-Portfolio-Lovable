@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: (https://loga19portfolio.lovable.app/)
+**URL**: https://loga19portfolio.lovable.app/
 
 **Use your preferred IDE**
 
