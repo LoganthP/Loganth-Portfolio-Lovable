@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ExternalLink, Github, MapPin, Headphones } from 'lucide-react';
+import { ExternalLink, Github, MapPin, Headphones, ShieldAlert, Cloud } from 'lucide-react';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
 
 const Projects = () => {
@@ -14,7 +14,7 @@ const Projects = () => {
       icon: MapPin,
       tags: ['Deep Learning', 'Satellite Imagery', 'Python', 'TensorFlow', 'Computer Vision'],
       color: 'from-primary to-secondary',
-      github: 'https://github.com/LoganthP',
+      github: 'https://github.com/LoganthP/TerraLens-SIH2025',
     },
     {
       id: 2,
@@ -24,7 +24,27 @@ const Projects = () => {
       icon: Headphones,
       tags: ['Real-time Processing', 'AI', 'Audio', 'Python', 'Machine Learning'],
       color: 'from-secondary to-accent',
-      github: 'https://github.com/LoganthP',
+      github: 'https://github.com/LoganthP/EarVan',
+    },
+    {
+      id: 3,
+      title: 'NetAlert-AI',
+      subtitle: 'AI Network Security',
+      description: 'Intelligent network monitoring and alerting system powered by AI. Detects anomalies and potential security threats in real-time.',
+      icon: ShieldAlert,
+      tags: ['Network Security', 'AI', 'Python', 'Anomaly Detection', 'Real-time'],
+      color: 'from-primary to-accent',
+      github: 'https://github.com/LoganthP/NetAlert-AI',
+    },
+    {
+      id: 4,
+      title: 'CloudSight-Analyzer',
+      subtitle: 'Cloud Infrastructure Analysis',
+      description: 'Comprehensive cloud infrastructure analysis tool for monitoring, optimization, and security assessment of cloud environments.',
+      icon: Cloud,
+      tags: ['Cloud Computing', 'Analysis', 'Python', 'Security', 'Monitoring'],
+      color: 'from-accent to-secondary',
+      github: 'https://github.com/LoganthP/CloudSight-Analyzer',
     },
   ];
 
