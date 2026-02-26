@@ -1,4 +1,4 @@
-# Loganth Portfolio
+<h1 align="center">Loganth Portfolio</h1>
 
 A modern developer portfolio website built using **TypeScript, Tailwind CSS, and Vite**, created with **Lovable AI**. This portfolio showcases projects, skills, and professional experience in a clean, interactive, and responsive design.
 
